@@ -60,3 +60,15 @@ weeks_left = round(age_90_weeks - age_weeks)
 months_left = round(age_90_months - age_months)
 
 print(f"You have {days_left} days, {weeks_left} weeks, and {months_left} months left to live to 90.")
+
+print("-" * 90)
+print("Welcome to the tips calculator!")
+
+total_bill = float(input('What is the total bill amount? '))
+tip_perc = float(input("What percentage tip would you like to give? 10, 12, or 15? "))
+people = int(input("How many people should split the bill? "))
+
+total_bill_perc = total_bill + (total_bill * (tip_perc/100))
+bill_split = round((total_bill_perc / people),2)
+
+print(f"Each person should pay: R{bill_split} ")
