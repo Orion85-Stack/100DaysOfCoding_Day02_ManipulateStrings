@@ -25,3 +25,38 @@ print(f"{sub_number_1} + {sub_number_2}")
 print(int(sub_number_1) + int(sub_number_2))
 # print(sub_number_1)
 # print(sub_number_2)
+
+print("-" * 90)
+
+print("Challenge : BMI Calculator")
+
+weight = int(input("Please enter your weight in kg: "))
+height = float(input("Please enter your height in meter: "))
+
+bmi = weight / height**2
+
+print("Your BMI index is : ")
+print(int(bmi))
+
+print("-" * 90)
+print("Life in Weeks")
+
+age = int(input("What is your age? "))
+
+age_days = age * 365
+age_months = age_days / 30
+age_weeks = age_days / 52
+
+age_90_days = 90 * 365
+age_90_months = age_90_days / 30
+age_90_weeks = age_90_days / 52
+
+# print(age_days)
+# print(round(age_weeks))
+# print(round(age_months))
+
+days_left = round(age_90_days - age_days)
+weeks_left = round(age_90_weeks - age_weeks)
+months_left = round(age_90_months - age_months)
+
+print(f"You have {days_left} days, {weeks_left} weeks, and {months_left} months left to live to 90.")
